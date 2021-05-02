@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APOD | Resilia</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="src/image/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h2>APOD - RESILIA T5</h2>
+    </header>
+    <main>
+        <div class="escolha">
+            <h3>Escolha a data que deseja pesquisar:</h3>
+            <p>
+                <form>
+                    <input type="date" id="data">
+                    <input type="submit" id="pesquisar" value="Pesquisar">
+                </form>
+            </p>
+        </div>
+        <div class="flex">
+            <h3 id="mostraData"></h3>
+            <h1 id="titulo"></h1>
+        </div>
+        <figure>
+            <img id="fotoNasa" src="" alt="">
+            <figcaption id="imgCopyright"></figcaption>
+        </figure>
+        <div id="divInformacao" class="flex">
+            <p id="informacao"></p>
+        </div>
+    </main>
+    <footer>
+        <p>Copyright © 2021 - Cinthia Miranda Cantu</p>
+    </footer>
+</body>
+</html>

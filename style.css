@@ -1,0 +1,104 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    padding: 20px;
+    background-color: rgb(32,42,71);
+    color: rgb(130, 107, 87);
+}
+
+main{
+    background-color: rgb(43,27,77);
+    color: rgb(130, 107, 87);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.escolha{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.escolha>h3{
+    margin: 0px 20px;
+    font-size: 1.5rem
+}
+.flex{
+    display: flex;
+    flex-direction: column;
+}
+
+#data{
+    height: 2vw;
+    text-align: center;
+    font-size: 1rem;
+    border-radius: 10px;
+    margin: 0 10px;
+    border: 2px solid #733A2A;
+    color: 	#733A2A;
+    font-weight: bold;
+    background-color: transparent;
+}
+
+#data:hover{
+    background-color: rgba(196, 131, 131, 0.2);
+}
+
+#pesquisar{
+    height: 2vw;
+    text-align: center;
+    font-size: 1rem;
+    border-radius: 10px;
+    margin: 0 10px;
+    padding: 0 20px;
+    border: 2px solid #733A2A;
+    color: 	#733A2A;
+    font-weight: bold;
+    background-color: transparent;
+}
+#pesquisar:hover{
+    background-color: rgba(196, 131, 131, 0.2);
+}
+
+#mostraData{
+    align-self: flex-end;
+    margin: 10px 0px;
+}
+#titulo{
+    align-self: center;
+    margin-bottom: 20px;
+}
+
+figure{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+#divInformacao{
+    align-self: center;
+    width: 80%;
+    text-align: justify;
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
+
+#fotoNasa{
+    width: 50vw;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    background-color: rgb(32,42,71);
+    color: rgb(130, 107, 87);
+}
