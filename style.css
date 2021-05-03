@@ -26,7 +26,7 @@ main{
 
 .escolha>h3{
     margin: 0px 20px;
-    font-size: 1.5rem
+    font-size: min(1.5rem, 5vw);
 }
 .flex{
     display: flex;
@@ -34,11 +34,11 @@ main{
 }
 
 #data{
-    height: 2vw;
+    height: 35px;
     text-align: center;
     font-size: 1rem;
     border-radius: 10px;
-    margin: 0 10px;
+    margin: 10px 10px;
     border: 2px solid #733A2A;
     color: 	#733A2A;
     font-weight: bold;
@@ -50,11 +50,11 @@ main{
 }
 
 #pesquisar{
-    height: 2vw;
+    height: 35px;
     text-align: center;
     font-size: 1rem;
     border-radius: 10px;
-    margin: 0 10px;
+    margin: 10px 10px;
     padding: 0 20px;
     border: 2px solid #733A2A;
     color: 	#733A2A;
@@ -72,6 +72,14 @@ main{
 #titulo{
     align-self: center;
     margin-bottom: 20px;
+    text-align: center;
+    font-size: min(2em, 7vw);
+}
+
+#media{
+    display: flex;
+    justify-content: center;
+    margin: 30px;
 }
 
 figure{
@@ -81,11 +89,16 @@ figure{
     margin-bottom: 30px;
 }
 
+iframe{
+    width: 60vw;
+    height: 33vw;
+}
+
 #divInformacao{
     align-self: center;
     width: 80%;
     text-align: justify;
-    font-size: 1.3rem;
+    font-size: min(1.3rem, 5vw);
     line-height: 1.5;
 }
 
@@ -101,4 +114,32 @@ footer{
     padding: 20px;
     background-color: rgb(32,42,71);
     color: rgb(130, 107, 87);
+}
+
+@media screen and (max-width: 700px) {
+    iframe{
+        width: 90vw;
+        height: 50vw;
+    }
+
+    #fotoNasa{
+        width: 80vw;
+    }
+
+    #divInformacao{
+        align-self: center;
+        width: 95%;
+        text-align: justify;
+        font-size: min(1.3rem, 5vw);
+        line-height: 1.5;
+    }
+
+    .escolha>h3{
+        margin: 0px;
+        text-align: center;
+    }
+
+    #titulo{
+        margin-bottom: 0px;
+    }
 }

@@ -26,17 +26,32 @@ function carregaApi( data ){
 }
 
 function botaInformacao( obj ){
-    var elemInfo = $('#informacao')
-    var elemImg = $('#fotoNasa')
+    var elemInfo = $('#informacao') 
     var elemData = $('#mostraData')
-    var elemImgLeg = $('#imgCopyright')
     var elemTitulo = $('#titulo')
 
     elemData.text(obj.date.split("-").reverse().join("/"))
-    elemImg.attr('src', obj.url)
     elemInfo.text(obj.explanation)
-    elemImgLeg.html(`Copyright da imagem: ${obj.copyright}`)
     elemTitulo.text(obj.title)
+
+    botaImagemOuVideo(obj.media_type, obj.url, obj.copyright)
+}
+
+function botaImagemOuVideo(tipo, src, copyright){
+    var elemMedia = $('#media')
+
+    if(tipo==="image"){
+        elemMedia.html(`
+        <figure>
+            <img id="fotoNasa" src="${src}" alt="">
+            <figcaption id="imgCopyright">Copyright da imagem: ${copyright}</figcaption>
+        </figure>
+        `)
+    } else if( tipo==="video" ){
+        elemMedia.html(`
+            <iframe width="854" height="480" src="${src}"></iframe>
+        `)
+    }
 }
 
 var objTeste = {
