@@ -11,7 +11,7 @@ header{
 }
 
 main{
-    background-image: url(/src/image/backgound-image);
+    background-image: url('/src/image/backgound-image');
     background-repeat: no-repeat;
     background-size: cover;
     color: rgb(130, 107, 87);
