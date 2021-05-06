@@ -11,7 +11,9 @@ header{
 }
 
 main{
-    background-color: rgb(43,27,77);
+    background-image: url(/src/image/backgound-image);
+    background-repeat: no-repeat;
+    background-size: cover;
     color: rgb(130, 107, 87);
     padding: 30px;
     display: flex;
@@ -22,6 +24,8 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgba(32,42,71, 0.7);
+    border-radius: 10px;
 }
 
 .escolha>h3{
@@ -68,12 +72,18 @@ main{
 #mostraData{
     align-self: flex-end;
     margin: 10px 0px;
+    background-color: rgba(32,42,71, 0.7);
+    border-radius: 10px;
+    padding: 10px;
 }
 #titulo{
     align-self: center;
     margin-bottom: 20px;
     text-align: center;
     font-size: min(2em, 7vw);
+    background-color: rgba(32,42,71, 0.7);
+    border-radius: 10px;
+    padding: 15px;
 }
 
 #media{
@@ -100,10 +110,19 @@ iframe{
     text-align: justify;
     font-size: min(1.3rem, 5vw);
     line-height: 1.5;
+    background-color: rgba(32,42,71, 0.7);
+    border-radius: 10px;
+    padding: 20px;
 }
 
 #fotoNasa{
     width: 50vw;
+}
+
+#imgCopyright{
+    background-color: rgba(32,42,71, 0.7);
+    border-radius: 10px;
+    padding: 10px;
 }
 
 footer{
