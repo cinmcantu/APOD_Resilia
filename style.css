@@ -11,6 +11,7 @@ header{
 }
 
 main{
+    background-color: #2b1b4d;
     background-image: url('/src/image/backgound-image');
     background-repeat: no-repeat;
     background-size: cover;
